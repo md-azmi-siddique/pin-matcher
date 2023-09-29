@@ -30,14 +30,17 @@ calcButtons.forEach(button => {
         inputBox.value = inputBox.value.toString().slice(0,-1);
     }
 
+    
+
     // Append the value of the button to the input box
   });
 });
 
 document.getElementById('submit').addEventListener('click', function(){
-    if (showPin.value === inputBox.value) {
-        alert('The two values are equal.');
+    if (showPin.value === inputBox.value && showPin.value !== '') {
+        console.log('success');
+        document.getElementById('successMatch').style.display = 'block';
       } else {
-        alert('The two values are not equal.');
+        document.getElementById('notMatch').style.display = 'block';
       }
 })
