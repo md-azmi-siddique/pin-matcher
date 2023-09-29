@@ -36,8 +36,8 @@ calcButtons.forEach(button => {
 
 document.getElementById('submit').addEventListener('click', function(){
     if (showPin.value === inputBox.value) {
-        console.log('The two values are equal.');
+        alert('The two values are equal.');
       } else {
-        console.log('The two values are not equal.');
+        alert('The two values are not equal.');
       }
 })
