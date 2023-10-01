@@ -36,8 +36,9 @@ calcButtons.forEach((button) => {
 document.getElementById("submit").addEventListener("click", function () {
   if (showPin.value === inputBox.value && showPin.value !== "") {
     console.log("success"); //debugger
-    document.getElementById("successMatch").style.display = "block"; //show success tag
-    document.getElementById("notMatch").style.display = "none"; //hide the fail tag
+    // document.getElementById("successMatch").style.display = "block"; //show success tag
+    // document.getElementById("notMatch").style.display = "none"; //hide the fail tag
+    window.location.href = './direction.html';
   } else {
     console.log("fail"); //debugger
     document.getElementById("notMatch").style.display = "block";  //show the fail tag
